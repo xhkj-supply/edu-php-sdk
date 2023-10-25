@@ -10,8 +10,8 @@ require_once __DIR__ . '/../autoload.php';
 
 use Xhkj\Edu\EduClient;
 
-$appKey = ""; 
-$appSecret = "";
+$appKey = "yunzL9Ua6L3qkZS42qW"; 
+$appSecret = "Q9alTTwXT9I3glDK8THBDpSKhVWUIhQI";
 
 try {
 	$eduClient = new EduClient($appKey,$appSecret);
@@ -22,22 +22,24 @@ try {
 }
 
 //2、刷新access_token接口
-/*$param = [
+$param = [
 ];
-$response = json_decode($eduClient->getApiResponse("post","/ssologin/refreshtoken",$param));*/
+$response = json_decode($eduClient->getApiResponse("post","/ssologin/refreshtoken",$param));
 
 //3、获取组织下部门列表
 /*$param = [
 	'team_id'=>1,
 	'cursor'=>0
 ];
-$response = json_decode($eduClient->getApiResponse("post","/api/opendept/teamdeptlist",$param));*/
+$response = json_decode($eduClient->getApiResponse("post","/api/opendept/teamdeptlist",$param));
+*/
 
 //4、获取组织下用户列表
 /*$param = [
 	'team_id'=>1,
 	'cursor'=>0
 ];
-$response = json_decode($eduClient->getApiResponse("post","/api/openuser/teamuserlist",$param));*/
+$response = json_decode($eduClient->getApiResponse("post","/api/openuser/teamuserlist",$param));
+*/
 
 var_dump($response);
