@@ -1,0 +1,24 @@
+{
+  "name": "xhkj-supply/edu-php-sdk",
+  "description": "Xhkj supply edu API SDK for PHP",
+  "type": "library",
+  "keywords": ["supply", "xhkj", "edu", "sdk"],
+  "require": {
+    "php": ">=7.0"
+  },
+  "homepage": "http://ju.wzzd.cn",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "xhkj",
+      "email": "1069945237@qq.com",
+      "homepage": "http://ju.wzzd.cn"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Xhkj\\Edu\\": "src/Xhkj/Edu"
+    }
+  }
+}
