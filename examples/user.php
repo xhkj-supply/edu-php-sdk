@@ -26,13 +26,14 @@ $param = [
 ];
 $response = json_decode($eduClient->getApiResponse("post","/ssologin/refreshtoken",$param));
 
+
 //3、获取组织下部门列表
-/*$param = [
+$param = [
 	'team_id'=>1,
 	'cursor'=>0
 ];
 $response = json_decode($eduClient->getApiResponse("post","/api/opendept/teamdeptlist",$param));
-*/
+
 
 //4、获取组织下用户列表
 /*$param = [

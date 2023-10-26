@@ -17,7 +17,7 @@ class EduClient extends Base
 	public $params;
 
 	protected $getBody = [
-		'/ssologin/gettoken','/api/base/userinfo'
+		'/ssologin/gettoken'
 	];
 	
 	/**
@@ -72,6 +72,9 @@ class EduClient extends Base
 		$response = RequestClint::$method($action, $this);
 		//清空请求参数
 		$this->removeAllParam();
+		if($action == '/ssologin/refreshtoken'){
+			$this->paramMap['access_token'] = json_decode($response)->data->access_token;
+		}
 		return $response;
 	}
 
